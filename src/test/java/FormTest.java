@@ -14,7 +14,7 @@ public class FormTest {
         open("http://localhost:9999");
 
         SelenideElement form = $("[id=root]");
-        form.$("[name=name]").setValue("Василий");
+        form.$("[name=name]").setValue("Софья");
         form.$("[name=phone").setValue("+79270000000");
         form.$("[data-test-id=agreement]").click();
         form.$("button").click();
