@@ -39,7 +39,7 @@ public class UnhappyPath {
         form.$("[name=name]").setValue("Софья");
         form.$("[name=phone]").setValue("+79270000000");
         form.$("button").click();
-        form.$("#root > div > form > div:nth-child(3) > label").shouldHave(exactText("Я соглашаюсь с условиями обработки и использования моих персональных данных и разрешаю сделать запрос в бюро кредитных историй"));
+        form.$("[data-test-id=agreement].input_invalid").shouldHave(exactText("Я соглашаюсь с условиями обработки и использования моих персональных данных и разрешаю сделать запрос в бюро кредитных историй"));
     }
 }
 
